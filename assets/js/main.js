@@ -112,7 +112,24 @@
 	// Section transitions.
 		if (browser.canUse('transition')) {
 
+			var animateSection = function($section) {
+		            $section.find('.animate').each(function() {
+		                var $this = $(this);
+		                var waypoint = new Waypoint({
+		                    element: this,
+		                    handler: function(direction) {
+		                        $this.addClass('fadeInRight animated');
+		                    },
+		                    offset: '75%'
+		                });
+		            });
+		        };
+			
 			var on = function() {
+				// Practices Page
+				animateSection($('#practices'));
+			        animateSection($('#law-firm-clients'));
+			        animateSection($('#previous-engagements'));
 
 				// Galleries.
 					$('.gallery')
@@ -182,6 +199,10 @@
 			breakpoints.on('<=small', off);
 			breakpoints.on('>small', on);
 
+			// Initial setup for larger screens
+		        if (!browser.mobile && !browser.tablet) {
+		            on();
+		        }
 		}
 
 	// Events.
