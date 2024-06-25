@@ -2269,13 +2269,12 @@ input, select, textarea {
 
 	#intro {
 		background: 
-			linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), /* Semi-transparent white overlay */
-			url("images/overlay.png"), 
+			linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), /* Semi-transparent blue overlay */
 			url("../../images/whiteboard_background.jpg");
-		background-size: 256px 256px, 256px 256px, cover;
-		background-attachment: fixed, fixed, fixed;
-		background-position: top left, top left, bottom center;
-		background-repeat: repeat, repeat, no-repeat;
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, bottom center;
+		background-repeat: repeat, no-repeat;
 	}
 
 /* One */
