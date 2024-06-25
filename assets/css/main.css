@@ -2269,7 +2269,7 @@ input, select, textarea {
 
 	#intro {
 		background: 
-			linear-gradient(rgba(120, 172, 220, 0.3), rgba(120, 172, 220, 0.3)), /* Semi-transparent blue overlay */
+			linear-gradient(rgba(0, 67, 119, 0.3), rgba(0, 67, 119, 0.3)), /* Semi-transparent blue overlay */
 			url("../../images/whiteboard_background.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
