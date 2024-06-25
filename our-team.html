@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Competition Dynamics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .tab-button.active {
+            background-color: #0073e6;
+            color: #fff;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .team-member {
+            margin-bottom: 20px;
+        }
+        .team-member h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .team-member h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .team-member p {
+            margin: 5px 0 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        header nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabButtons = document.querySelectorAll(".tab-button");
+            const tabContents = document.querySelectorAll(".tab-content");
+
+            tabButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    tabButtons.forEach(btn => btn.classList.remove("active"));
+                    tabContents.forEach(content => content.classList.remove("active"));
+                    
+                    button.classList.add("active");
+                    document.querySelector(button.dataset.target).classList.add("active");
+                });
+            });
+
+            // Activate the first tab by default
+            tabButtons[0].classList.add("active");
+            tabContents[0].classList.add("active");
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+				<h1>
+					<a href="index.html">
+						<img src="images/Competition_Dynamics_Logo_Transparent.png" alt="Company Logo" style="height: 65px;"/>
+					</a>
+				</h1>
+				<nav>
+					<ul>
+						<li><a href="about.html">About</a></li>
+        		<li><a href="our-team.html">Our Team</a></li>
+						<li><a href="practices.html">Practices</a></li>
+						<li><a href="insights.html">Insights</a></li>
+						<li><a href="careers.html">Careers</a></li>
+					</ul>
+				</nav>
+			</header>
+    <div class="container">
+        <h1>Our Team</h1>
+        <div class="tabs">
+            <button class="tab-button" data-target="#principal">Principal</button>
+            <button class="tab-button" data-target="#research-management">Research & Project Management</button>
+            <button class="tab-button" data-target="#analysts">Analysts</button>
+            <button class="tab-button" data-target="#administration">Administration</button>
+        </div>
+
+        <div id="principal" class="tab-content">
+            <div class="team-member">
+                <h2>Jon Putnam</h2>
+                <p>Jon Putnam founded Competition Dynamics as a platform for economic research and testimony at the intersection of intellectual property, competition, and international trade law.</p>
+                <p>Jon Putnam holds BA, MA and PhD degrees in economics from Yale University, where he specialized in international, macro and R&D economics. He received fellowships at Yale and Columbia Law Schools, and a Yale International and Area Studies fellowship for the study of European patent systems. Dr. Putnam’s PhD thesis, The Value of International Patent Rights, was the first to measure the global value of patent rights.</p>
+                <p>From 2001 to 2005, Dr. Putnam held a professorship in the Law and Economics of Intellectual Property at the Centre for Innovation Law and Policy, University of Toronto. Dr. Putnam has also held academic appointments at the Boston University Graduate School of Management, Columbia University Schools of Law and Business, Vassar College, and Yale College.</p>
+                <p>Among other publications, Dr. Putnam is the author of “Patent Valuation,” in The New Palgrave Dictionary of Economics (2008); “The Law and Economics of International Intellectual Property: A Primer,” in Frontiers of Economics and Globalization, vol. 2: Intellectual Property, Growth and Trade (2008); and is the editor of and a principal contributor to Intellectual Property Rights and Innovation in the Knowledge-Based Economy (2006).</p>
+                <p>Dr. Putnam has been retained in more than 100 consulting engagements and has testified more than 40 times in patent, antitrust, copyright, trade secret, contract and tax actions in federal, state and bankruptcy courts; before the US Federal Trade Commission, International Trade Commission, and Tax Court; in US and international arbitrations; and in regulatory proceedings in Canada and India.</p>
+                <p>Dr. Putnam regularly testifies in large-scale intellectual property litigation. Cases with more than $1 billion in controversy include:</p>
+                <ul>
+                  <li>Medtronic v Internal Revenue Service<li>
+                  <li>Apple v Qualcomm<li>
+                  <li>Idenix v Gilead Sciences<li>
+                  <li>Ericsson v Huawei<li>
+                  <li>Ericsson v Apple<li>
+                  <li>Ericsson v Samsung<li>
+                  <li>InterDigital v Samsung</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="research-management" class="tab-content">
+            <div class="team-member">
+                <h2>Ngoc Ngo</h2>
+                <h3>Economist</h3>
+                <p>Ngoc Ngo completed her PhD in Applied Economics with a focus on Industrial Organization at Northeastern University in 2019. Before her doctoral studies, Ngoc attended Bates College, where she graduated magna cum laude with a B.A. in Economics.</p>
+                <p>Ngoc’s PhD dissertation applied a modified version of the random-coefficient discrete choice model to quantify the impact of United Airlines’ decision to cease its hub operations at Cleveland Hopkins International Airport on consumer welfare and the firm’s profits. In general, Ngoc is passionate about working with data to formulate economic models to solve real-world problems.</p>
+                <p>Since joining CD, Ngoc has built models and conducted analyses related to damage calculation, valuation of new technologies and determining reasonable royalty terms in telecommunication and pharmaceutical industries. Ngoc is developing improved algorithms to rank patents and evaluate innovators’ patent portfolio; and has worked on various economic research to enhance methodologies used in Intellectual Property related litigation.</p>
+            </div>
+            <div class="team-member">
+                <h2>Ratib Ali</h2>
+                <h3>Economist</h3>
+                <p>Ratib Ali has a PhD in Economics from Boston College, with a focus in industrial organization and competition policy.</p>
+                <p>Ratib’s research revolved around how government regulation informs and impacts firm incentives. Ratib’s PhD thesis modeled demand for and supply of air travel to estimate the marginal cost of an “airport slot” (permit to fly one flight) at Reagan Airport, allowing him to compute the changes in consumer welfare stemming from structural remedies mandated by DOJ following the US Airways-American Airlines merger. By exploiting the exogeneity of Newark Airport’s dissolution of slot controls, Ratib also investigated the foreclosure incentives engendered by the “use-it-or-lose-it” feature of freely provided airport slots.</p>
+                <p>Prior to joining CD, Ratib worked at The Brattle Group as an Associate, where he focused in analyzing antitrust claims and estimating economic damages in industries as varied as healthcare, e-commerce, gig economy, and fine arts. Ratib is the former Economic Analyst at the Massachusetts Attorney General’s Office, Antitrust Division. There, his economic analyses and litigation support aided in enforcing federal and state antitrust laws in investigations spanning pharmaceutical, technology, and aviation industries.</p>
+                <p>Ratib also enjoys teaching; he taught Principles and Intermediate Microeconomics at Boston College from 2016 to 2019, Principles and Cultural Economics at Emerson College from 2019 to 2020, and teaches Intermediate Microeconomics at Tufts University since 2023.</p>
+            </div>
+            <div class="team-member">
+                <h2>Chen Wang</h2>
+                <h3>Associate</h3>
+                <p>Chen Wang received his Ph.D. in Economics from Clemson University in 2019 and Master’s degree in Economics from North Carolina State University in 2013.</p>
+                <p>Chen’s fields of interest include industrial organization, applied econometrics, and empirical microeconomics. His job market paper analyzes competition among firms and their choices on product quality and variety in markets with unified final good prices as applied to the U.S. film industry. By constructing a theoretical model and applying multiple econometric methods, this research reveals the previously unknown effect of expected market demand of the release week on the choices of films’ production budgets and genres, which are proxies for quality and variety, respectively.</p>
+                <p>In addition to research, Chen has extensive teaching experience as an instructor at Clemson University. He taught Principles of Microeconomics and Principles of Macroeconomics from 2015 to 2019.</p>
+                <p>Prior to joining CD, Chen was a transfer pricing Economist at PricewaterhouseCoopers, LLC in San Francisco. At PwC, Chen participated in and managed a wide range of transfer pricing projects serving various clients, which are mostly large multinational enterprises around the globe.</p>
+            </div>
+        </div>
+
+        <div id="analysts" class="tab-content">
+            <div class="team-member">
+                <h2>Zacharia Schell</h2>
+                <h3>Senior Analyst</h3>
+                <p>Zacharia Schell joined CD after graduating magna cum laude with a Bachelor of Arts Degree in Economics & Business Administration from Gordon College in 2021. During his studies, he cultivated his passion for research and the truth that it reveals as well as his love for data and statistics.</p>
+                <p>While at CD, Zacharia has demonstrated and honed his skills in data cleaning and analysis. Along with the models he has taken charge of, his attention to detail and care for consistency have made him a valuable resource to the team when creating exhibits and drafting report text used in litigation. In addition to this, Zacharia has also stepped up to lead data analysis for research papers and has taken on an additional role in the training of new hires as well as the day-to-day activities of the team.</p>
+                <p>Zacharia’s plan for the future is to continue to lead, both technically and interpersonally, within the analyst group. Eventually, he plans to continue his studies in the legal and business sectors, with a hope to apply his analytical skills to solving problems that matter to him.</p>
+            </div>
+            <div class="team-member">
+                <h2>Aarjan Rupakheti</h2>
+                <h3>Analyst</h3>
+                <p>Aarjan Rupakheti joined CD after graduating in 2022 from Boston College (BC) with an M.S. in Applied Economics with a Data Analytics Certificate. He also holds a B.A. in Quantitative Economics with a Math minor from Dickinson College.</p>
+                <p>At Dickinson, Aarjan undertook labor market research to understand the effects of low skilled immigration on native unemployment conditions across metropolitan areas in the U.S. He used fixed effect regression models to understand how influx of immigrants had varying effects in areas with different labor market conditions. Aarjan also interned as a Research Analyst at Burning Glass Institute where he researched the present conditions and prospects of human capital demand for Electric Vehicle growth for the Executive Office of the President of the United States (POTUS).</p>
+                <p>Aarjan is interested in econometrics, industrial organization, and the intersection of game theory and machine learning. At CD, he hopes to enhance his data handling, economic modeling, and project management skills in a professional setting. He is interested in pursuing a PhD in Economics, focusing on Industrial Organization.</p>
+            </div>
+        </div>
+
+        <div id="administration" class="tab-content">
+            <div class="team-member">
+                <h2>Lou Zetes</h2>
+                <h3>General Manager</h3>
+                <p>Lou Zetes joined Competition Dynamics in 2016 as General Manager. Lou develops the firm's organizational structure and capabilities, manages our strategic talent acquisition and oversees the firm's day-to-day activities.</p>
+                <p>After a fifteen-year career in international banking at Citigroup, Credit Suisse and Goldman Sachs, Lou founded Market People, an executive search boutique specializing in the recruitment of front office investment banking staff. Lou brings that wealth of experience in high-performance business environments to Competition Dynamics.</p>
+                <p>Lou holds an MA in International Business from the University of South Carolina and a BA in German from the University of Massachusetts, Amherst.</p>
+            </div>
+            <div class="team-member">
+                <h2>Kerri Lavertu Stamm</h2>
+                <h3>Director of Operations</h3>
+                <p>Kerri Lavertu Stamm came to Competition Dynamics after spending nearly 8 years at Charles River Associates, where she worked in new business development/conflict administration. Before that, Kerri worked in client intake/conflict control at Ropes & Gray LLP.</p>
+                <p>Kerri has a degree in Elementary Education from St. Joseph’s College in Maine. In addition, she operated a successful photography business, Dave & Kerri Photography, for several years, and now focuses on her travel photography, which can be seen periodically in local galleries and in photography publications such as Shutter Magazine.</p>
+                <p>At CD, Kerri handles all aspects of firm management including human resources, financial administration, AR/AP, as well as day-to-day business operations.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
