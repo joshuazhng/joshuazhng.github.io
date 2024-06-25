@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Competition Dynamics - Services</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<h1>
+				<a href="index.html">
+					<img src="images/Competition_Dynamics_Logo_Transparent.png" alt="Company Logo" style="height: 65px;"/>
+				</a>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="our-team.html">Our Team</a></li>
+					<li><a href="practices.html">Practices</a></li>
+					<li><a href="insights.html">Insights</a></li>
+					<li><a href="careers.html">Careers</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<main id="main" class="main">
+			<section id="practices" class="content">
+				<h2>Practices & Industries</h2>
+				<p>We work with leading law firms on today’s most complex and challenging cases. CD’s first client was a small American manufacturing firm facing the theft of secrets from its Chinese licensee. CD took the case from inception to trial at the International Trade Commission in less than 7 months. That hearing featured testimony on trade secret valuation, competitive injury, and international trade – the three pillars of CD’s expertise.</p>
+				<p>CD has rapidly built a substantial base of clients who demand the integrated analysis of IP, competition, and trade. Recent cases include:</p>
+				<ul>
+					<li>International standard-setting in telecommunications</li>
+					<li>Global lost profits resulting from domestic infringement</li>
+					<li>Design patents infringed by former international licensees</li>
+					<li>Location-aware technologies powered by global satellite and terrestrial networks</li>
+					<li>International patent rights in peer-to-peer networks</li>
+					<li>Services in the global supply chain that create an international patchwork of infringement</li>
+				</ul>
+			</section>
+
+			<section id="law-firm-clients" class="content">
+				<h2>Past Law Firm Clients</h2>
+				<ul class="client-list">
+					<li>Agility Law</li>
+					<li>Andrews & Kurth</li>
+					<li>Arnold & Porter</li>
+					<li>Baker Botts</li>
+					<li>Baker & McKenzie</li>
+					<li>Bingham McCutcheon</li>
+					<li>Brinks Hofer Gilson & Leone</li>
+					<li>Cadwalader Wickersham & Taft</li>
+					<li>Covington & Burling</li>
+					<li>Cravath, Swaine & Moore</li>
+					<li>DLA Piper</li>
+					<li>Dickstein Shapiro</li>
+				</ul>
+			</section>
+
+			<section id="previous-engagements" class="content">
+				<h2>Previous Engagements & Cases</h2>
+				<p>Past engagements on behalf of many Fortune 100 and other industry-leading firms:</p>
+				<ul class="client-list">
+					<li>Acer/Gateway</li>
+					<li>ASUS</li>
+					<li>AU Optronics</li>
+					<li>Dell</li>
+					<li>Hewlett-Packard</li>
+					<li>IBM</li>
+					<li>Nvidia</li>
+					<li>Sony</li>
+					<li>Sun Microsystems</li>
+				</ul>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Competition Dynamics. All rights reserved.</li>
+			</ul>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			// jQuery for text animation on scroll
+			$(document).ready(function() {
+				// Animate elements when they come into view
+				$('.content').each(function() {
+					var waypoint = new Waypoint({
+						element: this,
+						handler: function(direction) {
+							$(this.element).addClass('fadeInRight animated');
+						},
+						offset: '75%'
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
