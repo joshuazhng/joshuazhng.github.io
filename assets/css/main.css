@@ -2295,6 +2295,47 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 
+/* Careers Page */
+
+.careers-page {
+    color: black; /* Set text color to black */
+    text-align: center; /* Center align all text */
+}
+
+.careers-page .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.careers-page .content {
+    max-width: 800px; /* Adjust max-width as per your design */
+    margin: 0 auto; /* Center align content within main */
+}
+
+.careers-page .content p,
+.careers-page .content ul {
+    text-align: left; /* Reset text alignment for paragraphs and lists */
+    margin-bottom: 1em;
+}
+
+.careers-page .footer {
+    text-align: center; /* Center align text in footer */
+    color: black;
+}
+
+.careers-page .form {
+    text-align: center; /* Center align text in form */
+}
+
+.careers-page label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
 /* Contact */
 
 	#contact {
