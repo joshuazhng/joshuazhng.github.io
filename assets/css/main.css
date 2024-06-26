@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
-@import url("fontawesome-all.min.css");
+/* Import Questrial and MinionPro fonts */
+@font-face {
+    font-family: 'Questrial';
+    src: url('assets/webfonts/Questrial-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MinionPro';
+    src: url('assets/webfonts/MinionPro-Regular.otf') format('opentype');
+}
+
 
 /*
 	Big Picture by HTML5 UP
@@ -500,7 +509,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Questrial", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -550,6 +559,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: "MinionPro", "serif";
 		font-weight: 900;
 		color: inherit;
 		letter-spacing: -0.0325em;
