@@ -1204,6 +1204,67 @@ input, select, textarea {
 		margin-top: 2em;
 	}
 
+/* For Practices Page */
+
+/* Enhanced Header styles */
+header {
+    background: url('your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.intro-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sticky menu */
+.sticky-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.sticky-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-menu ul li {
+    margin: 0 20px;
+}
+
+.sticky-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sticky-menu ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
 /* Table */
 
 	table {
