@@ -560,9 +560,9 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "MinionPro", "serif";
+		font-family: "MinionPro", "Arial";
 		font-weight: 900;
-		color: inherit;
+		color: #262626;
 		letter-spacing: -0.0325em;
 	}
 
@@ -1933,7 +1933,7 @@ section h2 {
 
 			#header nav ul {
 				margin: 0;
-				color: #000000;
+				color: #262626;
 			}
 
 				#header nav ul li {
@@ -1950,6 +1950,7 @@ section h2 {
 						line-height: 3em;
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
+						font-weight: bold;
 					}
 
 		@media screen and (max-width: 736px) {
