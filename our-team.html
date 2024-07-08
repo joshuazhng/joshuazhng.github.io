@@ -6,21 +6,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .tab {
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            margin: 20px auto;
+            width: 75%;
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .tab button {
+            background-color: inherit;
+            float: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab button:hover {
+            border: 1px solid #000;
+        }
+        .tab button.active {
+            border: 1px solid #000;
+            border-bottom: none;
+        }
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+        .team-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            width: 45%;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
-				<h1>
-					<a href="index.html">
-						<img src="images/Competition_Dynamics_Logo_Transparent.png" alt="Company Logo" style="height: 65px;"/>
-					</a>
-				</h1>
-				<nav>
-					<ul>
-						<li><a href="about.html">About</a></li>
-        		<li><a href="our-team.html">Our Team</a></li>
-						<li><a href="practices.html">Practices</a></li>
-						<li><a href="insights.html">Insights</a></li>
-						<li><a href="careers.html">Careers</a></li>
-					</ul>
-				</nav>
-			</header>
+    <!-- Header -->
+		<header id="header">
+			<h1>
+				<a href="index.html">
+					<img src="images/Competition_Dynamics_Logo_Transparent.png" alt="Company Logo" style="height: 65px;"/>
+				</a>
+			</h1>
+			<nav>
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="our-team.html">Our Team</a></li>
+					<li><a href="practices.html">Practices</a></li>
+					<li><a href="insights.html">Insights</a></li>
+					<li><a href="careers.html">Careers</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <main>
+        <h2>Our Team</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Principal')" id="defaultOpen">Principal</button>
+            <button class="tablinks" onclick="openTab(event, 'Research')">Research & Project Management</button>
+            <button class="tablinks" onclick="openTab(event, 'Analyst')">Analyst</button>
+            <button class="tablinks" onclick="openTab(event, 'Administration')">Administration</button>
+        </div>
+
+        <div id="Principal" class="tabcontent">
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>Jon Putnam</h3>
+                    <p>Principal</p>
+                    <p>Email: <a href="mailto:jon.putnam@cornerstone.com">jon.putnam@cornerstone.com</a></p>
+                    <p>Phone: <a href="tel:+12029128925">202.912.8925</a></p>
+                    <a href="jon-putnam.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Research" class="tabcontent">
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Research & Project Management</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Research & Project Management</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Analyst" class="tabcontent">
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Analyst</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Analyst</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Analyst</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Analyst</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Administration" class="tabcontent">
+            <div class="team-container">
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Administration</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Administration</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+                <div class="team-card">
+                    <h3>Contact Name</h3>
+                    <p>Administration</p>
+                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                    <a href="firstname-lastname.html">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Competition Dynamics. All rights reserved.</li>
+			</ul>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
+
