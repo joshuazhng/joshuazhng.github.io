@@ -10,7 +10,7 @@
         .tab {
             overflow: hidden;
             border-bottom: 1px solid #ccc;
-            margin: 20px auto;
+            margin: 40px auto 20px auto;
             width: 75%;
             border-top: 1px solid #ccc;
             padding: 10px 0;
@@ -22,7 +22,7 @@
             border: none;
             outline: none;
             cursor: pointer;
-            padding: 14px 16px;
+            padding: 10px 20px;
             transition: 0.3s;
             font-size: 17px;
         }
@@ -35,22 +35,35 @@
         }
         .tabcontent {
             display: none;
-            padding: 6px 12px;
+            padding: 20px 0;
             border-top: none;
+            margin-bottom: 40px;
         }
         .team-card {
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 10px;
-            margin: 10px;
-            text-align: center;
+            margin: 20px;
+            text-align: left;
             width: 45%;
+            display: flex;
+            align-items: center;
+        }
+	.team-card img {
+            border-radius: 10px;
+            margin-right: 10px;
+            max-width: 100px;
         }
         .team-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+	h2 {
+	    padding-left: 20px;
+	    color: #000;
+	    margin-top: 40px;
+	}
     </style>
 </head>
 <body>
@@ -84,11 +97,14 @@
         <div id="Principal" class="tabcontent">
             <div class="team-container">
                 <div class="team-card">
-                    <h3>Jon Putnam</h3>
-                    <p>Principal</p>
-                    <p>Email: <a href="mailto:jon.putnam@cornerstone.com">jon.putnam@cornerstone.com</a></p>
-                    <p>Phone: <a href="tel:+12029128925">202.912.8925</a></p>
-                    <a href="jon-putnam.html">Learn More</a>
+			<img src="images/jon-putnam.jpg" alt="Jon Putnam">
+			<div>
+	                    <h3>Jon Putnam</h3>
+	                    <p>Principal</p>
+	                    <p>Email: <a href="mailto:jon.putnam@competitiondynamics.com">jon.putnam@competitiondynamics.com</a></p>
+	                    <p>Phone: <a href="tel:+12029128925">202.912.8925</a></p>
+	                    <a href="jon-putnam.html">Learn More</a>
+			</div>
                 </div>
             </div>
         </div>
@@ -96,18 +112,24 @@
         <div id="Research" class="tabcontent">
             <div class="team-container">
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Research & Project Management</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact1.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Research & Project Management</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Research & Project Management</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact2.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Research & Project Management</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,32 +137,44 @@
         <div id="Analyst" class="tabcontent">
             <div class="team-container">
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Analyst</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact3.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Analyst</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Analyst</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact4.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Analyst</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Analyst</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact5.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Analyst</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Analyst</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact6.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Analyst</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,25 +182,34 @@
         <div id="Administration" class="tabcontent">
             <div class="team-container">
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Administration</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact7.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Administration</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Administration</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact8.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Administration</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <h3>Contact Name</h3>
-                    <p>Administration</p>
-                    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-                    <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                    <a href="firstname-lastname.html">Learn More</a>
+                    <img src="images/contact9.jpg" alt="Contact Name">
+                    <div>
+                        <h3>Contact Name</h3>
+                        <p>Administration</p>
+                        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+                        <p>Phone: <a href="tel:+1234567890">123.456.7890</a></p>
+                        <a href="firstname-lastname.html">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,7 +224,7 @@
 				<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; Competition Dynamics. All rights reserved.</li>
+				<li>&copy; 2024 Competition Dynamics. All rights reserved.</li>
 			</ul>
 		</footer>
 
