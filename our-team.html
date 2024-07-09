@@ -6,71 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .tab {
-            overflow: hidden;
-            margin: 40px auto 20px auto;
-            width: 75%;
-            border-top: 1px solid #ccc;
-	    border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-            text-align: center;
-	    color: #0072ac;
-        }
-        .tab button {
-            background-color: inherit;
-            float: none;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 17px;
-	    font-family: Lato, sans-serif;
-	    color: #091717;
-        }
-        .tab button:hover {
-            border: 1px solid #000;
-        }
-        .tab button.active {
-            border: 1px solid #000;
-        }
-        .tabcontent {
-            display: none;
-            padding: 20px 0;
-            border-top: none;
-            margin-bottom: 50px;
-        }
-        .team-card {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 20px;
-            text-align: left;
-            width: 45%;
-            display: flex;
-            align-items: center;
-        }
-	.team-card img {
-            border-radius: 10px;
-	    margin-left: 10px;
-            margin-right: 30px;
-            max-width: 210px;
-        }
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-	h2 {
-	    padding-left: 20px;
-	    color: #000;
-	    margin-top: 100px;
-	}
-	.compact {
-	    margin-top: 3px; /* Adjust this value to reduce spacing */
-	    margin-bottom: 3px; /* Adjust this value to reduce spacing */
-	}
-    </style>
+<style>
+    :root {
+        font-size: 16px; /* 1em = 16px by default */
+    }
+    
+    .tab {
+        overflow: hidden;
+        margin: 2.5em auto 1.25em auto;
+        width: 75%;
+        border-top: 0.0625em solid #ccc;
+        border-bottom: 0.0625em solid #ccc;
+        padding: 0.625em 0;
+        text-align: center;
+        color: #fff;
+        background-color: #0072ac;
+    }
+    .tab button {
+        background-color: inherit;
+        float: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 1.0625em;
+        font-family: Lato, sans-serif;
+        color: #091717;
+    }
+    .tab button:hover {
+        border: 0.0625em solid #000;
+    }
+    .tab button.active {
+        border: 0.0625em solid #000;
+    }
+    .tabcontent {
+        display: none;
+        padding: 1.25em 0;
+        border-top: none;
+        margin-bottom: 3.125em;
+    }
+    .team-card {
+        border: 0.0625em solid #ccc;
+        border-radius: 0.625em;
+        padding: 0.625em;
+        margin: 1.25em;
+        text-align: left;
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    .team-card img {
+        border-radius: 0.625em;
+        margin-left: 0.625em;
+        margin-right: 1.875em;
+        width: 13.125em; /* 210px / 16 */
+        height: 25em; /* 400px / 16 */
+        object-fit: cover;
+        object-position: center;
+    }
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h2 {
+        padding-left: 1.25em;
+        color: #000;
+        margin-top: 6.25em;
+    }
+    .compact {
+        margin-top: 0.1875em; /* 3px / 16 */
+        margin-bottom: 0.1875em; /* 3px / 16 */
+    }
+</style>
+
 </head>
 <body>
     <!-- Header -->
@@ -183,13 +192,13 @@
         <div id="Analyst" class="tabcontent">
             <div class="team-container">
                 <div class="team-card">
-                    <img src="images/headshots/Zacharia-Schell.jpg" alt="Zacharia Schell">
+                    <img src="images/headshots/Zach-Schell.jpg" alt="Zacharia Schell">
                     <div>
                         <h3>Zacharia Schell</h3>
                         <p>Senior Analyst</p>
                         <p class="compact">Email: <a href="mailto:zacharia.schell@competitiondynamics.com">zacharia.schell@competitiondynamics.com</a></p>
                         <p class="compact">Phone: <a href="tel:+1234567890">123.456.7890</a></p>
-                        <a href="zacharia-schell.html">Learn More</a>
+                        <a href="zach-schell.html">Learn More</a>
                     </div>
                 </div>
                 <div class="team-card">
