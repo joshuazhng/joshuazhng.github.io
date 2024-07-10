@@ -8,97 +8,87 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	
 <style>
-
-	html, body {
-	    height: 100%;
-	}
-	
-	body {
-	    background: url('../images/translucent_background.png') no-repeat center center fixed;
-	    background-size: cover;
-	    color: #000;
-	    margin: 0; /* Ensure no default margin */
-    	    padding: 0; /* Ensure no default padding */
-    	    height: 100vh; /* Full viewport height */
-	}
-	
-	.content {
-	    background-color: rgba(255, 255, 255, 0.2); /* Light background for readability */
-	    padding: 0.75em; /* Reduce padding */
-	    border-radius: 0.375em; /* Reduce border radius */
-	    margin: 0.75em; /* Reduce margin */
-	    height: 100%; /* Full height */
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    justify-content: center;
-	}
-	
-    .tab {
-        overflow: hidden;
-        margin: 2.5em auto 1.25em auto;
-        width: 75%;
-        border-top: 0.0625em solid #ccc;
-        border-bottom: 0.0625em solid #ccc;
-        padding: 0.25em 0;
-        text-align: center;
-    }
-    .tab button {
-        background-color: inherit;
-        float: none;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 1.0625em;
-        font-family: Lato, sans-serif;
-        color: #091717;
-    }
-    .tab button:hover {
-        border: 0.0625em solid #000;
-    }
-    .tab button.active {
-        border: 0.0625em solid #000;
-    }
-    .tabcontent {
-        display: none;
-        padding: 1.25em 0;
-        border-top: none;
-        margin-bottom: 3.125em;
-    }
-    .team-card {
-        border: 0.0625em solid #ccc;
-        border-radius: 0.625em;
-        padding: 0.625em;
-        margin: 1.25em;
-        text-align: left;
-        width: 45%;
-        display: flex;
-        align-items: center;
-    }
-    .team-card img {
-        border-radius: 0.8em;
-        margin-left: 0.625em;
-        margin-right: 1.875em;
-        width: 10em; /* 210px / 16 */
-        height: 16em; /* 400px / 16 */
-        object-fit: cover;
-        object-position: center;
-    }
-    .team-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    h2 {
-        padding-left: 2.5em;
-        color: #000;
-        margin-top: 1.75em;
-    }
-    .compact {
-        margin-top: 0.1875em; /* 3px / 16 */
-        margin-bottom: 0.1875em; /* 3px / 16 */
-    }
+		html, body {
+		    height: 100%;
+		}
+		
+		p {
+			color: #FFFFF7;
+		}
+		
+		.tab {
+			overflow: hidden;
+			margin: 2.5em auto 1.25em auto;
+			width: 75%;
+			border-top: 0.0625em solid #ccc;
+			border-bottom: 0.0625em solid #ccc;
+			padding: 0.25em 0;
+			text-align: center;
+		}
+		.tab button {
+			background-color: inherit;
+			float: none;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			transition: 0.3s;
+			font-size: 1.0625em;
+			font-family: Lato, sans-serif;
+			color: #091717;
+		}
+		.tab button:hover {
+			border: 0.0625em solid #000;
+		}
+		.tab button.active {
+			border: 0.0625em solid #000;
+		}
+		.tabcontent {
+			display: none;
+			padding: 1.25em 0;
+			border-top: none;
+			margin-bottom: 3.125em;
+		}
+		.team-card {
+			border: 0.0625em solid #ccc;
+			border-radius: 0.625em;
+			padding: 0.625em;
+			margin: 1.25em;
+			text-align: left;
+			width: 45%;
+			display: flex;
+			align-items: center;
+		
+		}
+		.team-card img {
+			border-radius: 0.8em;
+			margin-left: 0.625em;
+			margin-right: 1.875em;
+			width: 10em; /* 210px / 16 */
+			height: 16em; /* 400px / 16 */
+			object-fit: cover;
+			object-position: center;
+		}
+		.team-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		h2 {
+			padding-left: 2.5em;
+			color: #000;
+			margin-top: 1.75em;
+		}
+		.compact {
+			font-size: 0.8em;
+			margin-bottom: -0.3em; /* 3px / 16 */
+		}
+		a {
+		    color: #58A6FD;
+		}
+		h3 {
+			color: #FFFFF7;
+		}
+		
 </style>
 
 </head>
