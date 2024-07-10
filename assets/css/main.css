@@ -2348,7 +2348,7 @@ section h2 {
 	#intro {
 		background: 
 			linear-gradient(rgba(0, 67, 119, 0.3), rgba(0, 67, 119, 0.3)), /* Semi-transparent blue overlay */
-			url("../../images/translucent_background.jpg");
+			url("../../images/translucent_background.png");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
