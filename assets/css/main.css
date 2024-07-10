@@ -1214,7 +1214,6 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
 }
 
 .intro-container {
@@ -2060,7 +2059,6 @@ section h2 {
 			.main.style1 h2 {
 				font-size: 4.25em;
 				line-height: 1em;
-				color: white;
 			}
 
 			.main.style1 > .content {
