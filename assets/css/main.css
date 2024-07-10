@@ -1209,7 +1209,6 @@ input, select, textarea {
 
 /* Enhanced Header styles */
 header {
-    background: url('your-background-image.jpg') no-repeat center center;
     background-size: cover;
     height: 50vh;
     display: flex;
