@@ -11,38 +11,6 @@
         background-color: white;
     }
     
-    #header {
-        background-color: #333;
-        color: white;
-        padding: 1em 0;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
-    
-    #header h1 {
-        margin: 0;
-    }
-    
-    #header nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #header nav ul li {
-        margin: 0 1em;
-    }
-    
-    #header nav ul li a {
-        color: white;
-        text-decoration: none;
-    }
-    
     .wrapper {
         padding: 5em 0;
     }
@@ -50,13 +18,7 @@
     #intro {
         text-align: center;
         padding-top: 100px; /* Adjust for the fixed header */
-    }
-
-    .intro-image {
-        width: 80%;
-        height: auto;
-        margin-top: 20px;
-        border-radius: 8px;
+        background: linear-gradient(rgba(0, 67, 119, 0.3), rgba(0, 67, 119, 0.3)), /* Semi-transparent blue overlay */ url(../../images/practices-page/practice_img.jpg);
     }
     
     .spotlight {
@@ -132,39 +94,43 @@
     <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
             <h2>Our Practices</h2>
-            <img src="images/introductory_image.jpg" alt="Introductory Image" class="intro-image" />
         </div>
     </section>
   
     <!-- Main Section -->
     <section id="main" class="wrapper">
         <div class="inner">
+
             <!-- First Screen -->
             <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-                <div class="content">
-                    <h2>Our Services</h2>
-                    <p>We work with leading law firms on today’s most complex and challenging cases. CD’s first client was a small American manufacturing firm facing the theft of secrets from its Chinese licensee. CD took the case from inception to trial at the International Trade Commission in less than 7 months. That hearing featured testimony on trade secret valuation, competitive injury, and international trade – the three pillars of CD’s expertise. CD has rapidly built a substantial base of clients who demand the integrated analysis of IP, competition, and trade.</p>
-                </div>
-                <div class="image">
-                    <img src="../images/practices-page/litigation_img.jpg" alt="" />
+                <div class="flex-container">
+                    <div class="flex-content-left">
+                        <h2>Our Services</h2>
+                        <p>We work with leading law firms on today’s most complex and challenging cases. CD’s first client was a small American manufacturing firm facing the theft of secrets from its Chinese licensee. CD took the case from inception to trial at the International Trade Commission in less than 7 months. That hearing featured testimony on trade secret valuation, competitive injury, and international trade – the three pillars of CD’s expertise. CD has rapidly built a substantial base of clients who demand the integrated analysis of IP, competition, and trade.</p>
+                    </div>
+                    <div class="flex-image-right">
+                        <img src="../images/practices-page/litigation_img.jpg" alt="" />
+                    </div>
                 </div>
             </section>
 
             <!-- Second Screen -->
-            <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-                <div class="content">
-                    <h2>Industry Expertise</h2>
-                    <ul>
-                        <li>International standard-setting in telecommunications</li>
-                        <li>Global lost profits resulting from domestic infringement</li>
-                        <li>Design patents infringed by former international licensees</li>
-                        <li>Location-aware technologies powered by global satellite and terrestrial networks</li>
-                        <li>International patent rights in peer-to-peer networks</li>
-                        <li>Services in the global supply chain that create an international patchwork of infringement</li>
-                    </ul>
-                </div>
-                <div class="image">
-                    <img src="images/image2.jpg" alt="" />
+             <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                <div class="flex-container">
+                    <div class="flex-image-left">
+                        <img src="../images/practices-page/industries_img.jpg" alt="" />
+                    </div>
+                    <div class="flex-content-right">
+                        <h2>Industry Expertise</h2>
+                        <ul>
+                            <li>International standard-setting in telecommunications</li>
+                            <li>Global lost profits resulting from domestic infringement</li>
+                            <li>Design patents infringed by former international licensees</li>
+                            <li>Location-aware technologies powered by global satellite and terrestrial networks</li>
+                            <li>International patent rights in peer-to-peer networks</li>
+                            <li>Services in the global supply chain that create an international patchwork of infringement</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
