@@ -158,5 +158,12 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<script>
+			document.querySelector('.menu-toggle').addEventListener('click', function() {
+			    this.classList.toggle('active');
+			    document.querySelector('nav ul').classList.toggle('active');
+			});
+		</script>
+
 	</body>
 </html>
