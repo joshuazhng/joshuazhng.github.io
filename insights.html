@@ -19,12 +19,21 @@
             width: 80%;
             margin: auto;
             padding: 20px;
+	    z-index: 1;
         }
-	.carousel-container {
+	.carousel-wrapper {
+	    position: relative;
+	    z-index: 0; /* Ensure it’s behind the container content */
+	}
+	.carousel-background {
+	    position: absolute;
+	    top: 0;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    width: 100vw; /* Full viewport width */
+	    height: calc(75vh + 40px);
 	    background-color: #232861;
-	    padding-top: 2em;
-	    padding-bottom: 2em;
-	    width: 100%;
+	    z-index: -1;
 	}
         .carousel {
             position: relative;
@@ -138,7 +147,8 @@
 	    
         <h2>Insights</h2>
 
-	<div class="carousel-container">
+	<div class="carousel-wrapper">
+		<div class="carousel-background"></div>
 		<div class="carousel">
 		    <div class="carousel-inner">
 			<div class="carousel-item">
