@@ -1993,16 +1993,23 @@ section h2 {
 		}
 
 		@media (max-width: 768px) {
+		    #header {
+			    z-index: 10000;
+		    }
+		
 		    #header nav {
 		        display: none;
-		        position: absolute;
-		        top: 100%;
+		        position: fixed;
+		        top: 2em;
 		        left: 0;
 		        width: 100%;
+			height: calc(100vh - 2em);
 		        background: rgba(255, 255, 255, 0.9);
 			transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 		        opacity: 0;
 		        visibility: hidden;
+			overflow-y: auto;
+			z-index: 9999;
 		    }
 		
 		    #header nav ul {
@@ -2010,14 +2017,17 @@ section h2 {
 		        flex-direction: column;
 		        width: 100%;
 		        text-align: center;
+			padding: 1em 0;
 		    }
 		
 		    #header nav ul li {
-		        margin: 10px 0;
+		        margin: 0.5em 0;
 		    }
 
 		    #header nav ul li a {
 		        color: #262626; /* Ensure text is visible on the new background */
+			display: block;
+			padding: 0.5em 1em;
 		    }
 		
 		    #header .menu-toggle {
