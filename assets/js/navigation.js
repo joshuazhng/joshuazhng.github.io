@@ -14,6 +14,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add click event listener
     menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
         nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInside = header.contains(event.target);
+        
+        if (!isClickInside && nav.classList.contains('active')) {
+            menuToggle.classList.remove('active');
+            nav.classList.remove('active');
+        }
     });
 });
