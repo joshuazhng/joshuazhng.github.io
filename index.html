@@ -21,6 +21,11 @@
 						<img src="images/Competition_Dynamics_Logo_Transparent.png" alt="Company Logo" style="height: 65px;"/>
 					</a>
 				</h1>
+				<div class="menu-toggle">
+				        <div></div>
+				        <div></div>
+				        <div></div>
+			        </div>
 				<nav>
 					<ul>
 						<li><a href="about.html">About</a></li>
@@ -159,9 +164,13 @@
 			<script src="assets/js/main.js"></script>
 
 		<script>
-			document.querySelector('.menu-toggle').addEventListener('click', function() {
-			    this.classList.toggle('active');
-			    document.querySelector('nav ul').classList.toggle('active');
+			document.addEventListener('DOMContentLoaded', function() {
+			    const menuToggle = document.querySelector('.menu-toggle');
+			    const nav = document.querySelector('#header nav');
+			
+			    menuToggle.addEventListener('click', function() {
+			        nav.classList.toggle('active');
+			    });
 			});
 		</script>
 
