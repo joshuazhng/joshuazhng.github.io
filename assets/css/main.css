@@ -1969,8 +1969,8 @@ section h2 {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+				height: 4em;
+				line-height: 4em;
 			}
 
 				#header h1 {
@@ -1990,6 +1990,9 @@ section h2 {
 					display: none;
 				}
 
+			body {
+				padding-top: 4em;
+			}
 		}
 
 		@media (max-width: 768px) {
@@ -2000,10 +2003,10 @@ section h2 {
 		    #header nav {
 		        display: none;
 		        position: fixed;
-		        top: 2em;
+		        top: 4em;
 		        left: 0;
 		        width: 100%;
-			height: calc(100vh - 2em);
+			height: calc(100vh - 4em);
 		        background: rgba(255, 255, 255, 0.9);
 			transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 		        opacity: 0;
@@ -2037,7 +2040,7 @@ section h2 {
 		        width: 30px;
 		        height: 25px;
 		        position: absolute;
-		        top: 50%;
+		        top: 2em;
 		        right: 1em;
 		        transform: translateY(-50%);
 		        cursor: pointer;
