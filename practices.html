@@ -9,7 +9,6 @@
 
     <style>
 		.screen {
-		    min-height: 100vh;
 		    display: flex;
 		    align-items: center;
 		    justify-content: center;
@@ -17,11 +16,9 @@
 		    opacity: 0;
 		    transition: opacity 0.5s ease-in-out;
 		}
-		
 		.screen.active {
 		    opacity: 1;
 		}
-		
 		.content-split {
 		    display: flex;
 		    width: 100%;
@@ -29,15 +26,9 @@
 		    margin: 0 auto;
 		    gap: 2rem;
 		}
-		
-		.content-split.reverse {
-		    flex-direction: row-reverse;
-		}
-		
 		.image-container, .text-container {
 		    flex: 1;
 		}
-		
 		.image-container img {
 		    width: 100%;
 		    height: auto;
@@ -71,19 +62,24 @@
 		.practices-intro {
 			position: relative;
 			width: 60%;
-			height: 60vh;
+			height: 80vh;
 			left: 20%;
 			overflow: hidden;
 			padding-top: 1em;
+		}
+	    	.practices-intro .image-container {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 60%;
+			height: 100%;
+			overflow: hidden;
 		}
 		.practices-intro img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-		}
-		h2 {
-			padding-left: 4em;
-			padding-top: 1.8em;
+			object-position: left center;
 		}
     </style>
 </head>
@@ -110,13 +106,13 @@
 
 <main>
 
-	<h2>Practices</h2>
+	<h2 style="padding-left: 4em; padding-top: 1.8em;">Practices</h2>
 	
    <!-- Intro Screen -->
 	<section class="practices-intro">
-		<div>
-			<img src="../images/practices/bg.jpg" alt="Intro Image">
-		</div>
+	    <div class="image-container">
+	        <img src="../images/practices/bg.jpg" alt="Intro Image">
+	    </div>
 	</section>
 
 	<!-- Our Services -->
@@ -157,10 +153,11 @@
 	<!-- Past Engagements & Clients -->
 	<section class="screen" id="past-engagements">
 		<div>
-			<h2 style="text-align: center;">Past Engagements & Clients</h2>
+			<h2 style="font-size: 2rem;">Past Engagements & Clients</h2>
 			<div class="content-split">
 				<div>
-					<h3>Our past engagements on behalf of many Fortune 100 & industry-leading firms:</h3>
+					<h3>Our past engagements on behalf of many</h3>
+					<h3>Fortune 100 & industry-leading firms:</h3>
 					<ul>
 						<li>Acer/Gateway</li>
 						<li>ASUS</li>
