@@ -8,6 +8,66 @@
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
     <style>
+		.screen {
+		    min-height: 100vh;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    padding: 2rem;
+		    opacity: 0;
+		    transition: opacity 0.5s ease-in-out;
+		}
+		
+		.screen.active {
+		    opacity: 1;
+		}
+		
+		.content-split {
+		    display: flex;
+		    width: 100%;
+		    max-width: 1200px;
+		    margin: 0 auto;
+		    gap: 2rem;
+		}
+		
+		.content-split.reverse {
+		    flex-direction: row-reverse;
+		}
+		
+		.image-container, .text-container {
+		    flex: 1;
+		}
+		
+		.image-container img {
+		    width: 100%;
+		    height: auto;
+		    object-fit: cover;
+		}
+		
+		.text-container h2 {
+		    margin-bottom: 1rem;
+		    font-size: 2rem;
+		    color: #333;
+		}
+		
+		.text-container p, .text-container ul {
+		    margin-bottom: 1rem;
+		    line-height: 1.6;
+		}
+		
+		.text-container ul {
+		    padding-left: 1.5rem;
+		}
+		
+		@media (max-width: 768px) {
+		    .content-split, .content-split.reverse {
+		        flex-direction: column;
+		    }
+		
+		    .image-container, .text-container {
+		        width: 100%;
+		    }
+		}
 		.practices-intro {
 			position: relative;
 			width: 60%;
@@ -23,7 +83,7 @@
 		}
 		h2 {
 			padding-left: 4em;
-			padding-top: 0.85em;
+			padding-top: 1.8em;
 		}
     </style>
 </head>
@@ -61,37 +121,37 @@
 
 	<!-- Our Services -->
 	<section class="screen" id="our-services">
-		<div class="content-split">
-			<div>
-				<img src="../images/practices/services.jpg" alt="Our Services" style="width: 100%;">
-			</div>
-			<div>
-				<h2>Our Services</h2>
-				<p>We work with leading law firms on today's most complex and challenging cases. CD's first client was a small American manufacturing firm facing the theft of secrets from its Chinese licensee. CD took the case from inception to trial at the International Trade Commission in less than 7 months. That hearing featured testimony on trade secret valuation, competitive injury, and international trade – the three pillars of CD's expertise.</p>
-				<p>CD has rapidly built a substantial base of clients who demand the integrated analysis of IP, competition, and trade.</p>
-			</div>
-		</div>
+	    <div class="content-split">
+	        <div class="image-container">
+	            <img src="../images/practices/services.jpg" alt="Our Services">
+	        </div>
+	        <div class="text-container">
+	            <h2>Our Services</h2>
+	            <p>We work with leading law firms on today's most complex and challenging cases. CD's first client was a small American manufacturing firm facing the theft of secrets from its Chinese licensee. CD took the case from inception to trial at the International Trade Commission in less than 7 months. That hearing featured testimony on trade secret valuation, competitive injury, and international trade – the three pillars of CD's expertise.</p>
+	            <p>CD has rapidly built a substantial base of clients who demand the integrated analysis of IP, competition, and trade.</p>
+	        </div>
+	    </div>
 	</section>
-
+	
 	<!-- Industry Expertise -->
 	<section class="screen" id="industry-expertise">
-		<div class="content-split">
-			<div>
-				<h2>Industry Expertise</h2>
-				<p>Our previous work has spanned numerous varying industries and companies:</p>
-				<ul>
-					<li>International standard-setting in telecommunications</li>
-					<li>Global lost profits resulting from domestic infringement</li>
-					<li>Design patents infringed by former international licensees</li>
-					<li>Location-aware technologies powered by global satellite and terrestrial networks</li>
-					<li>International patent rights in peer-to-peer networks</li>
-					<li>Services in the global supply chain that create an international patchwork of infringement</li>
-				</ul>
-			</div>
-			<div>
-				<img src="../images/practices/industries.jpg" alt="Industry Expertise" style="width: 100%;">
-			</div>
-		</div>
+	    <div class="content-split reverse">
+	        <div class="text-container">
+	            <h2>Industry Expertise</h2>
+	            <p>Our previous work has spanned numerous varying industries and companies:</p>
+	            <ul>
+	                <li>International standard-setting in telecommunications</li>
+	                <li>Global lost profits resulting from domestic infringement</li>
+	                <li>Design patents infringed by former international licensees</li>
+	                <li>Location-aware technologies powered by global satellite and terrestrial networks</li>
+	                <li>International patent rights in peer-to-peer networks</li>
+	                <li>Services in the global supply chain that create an international patchwork of infringement</li>
+	            </ul>
+	        </div>
+	        <div class="image-container">
+	            <img src="../images/practices/industries.jpg" alt="Industry Expertise">
+	        </div>
+	    </div>
 	</section>
 
 	<!-- Past Engagements & Clients -->
