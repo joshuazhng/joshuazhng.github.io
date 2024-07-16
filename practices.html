@@ -26,13 +26,52 @@
 		    margin: 0 auto;
 		    gap: 2rem;
 		}
-		.image-container, .text-container {
-		    flex: 1;
+	    	.image-container {
+		    position: relative;
+		    display: inline-block; /* Ensure the container sizes to the image */
 		}
+		
+		.image-container::before {
+		    content: '';
+		    position: absolute;
+		    top: -2%;  /* Adjust this value for the desired offset */
+		    left: -2%; /* Adjust this value for the desired offset */
+		    width: calc(100% + 4%); /* Expand to cover the offset */
+		    height: calc(100% + 4%); /* Expand to cover the offset */
+		    background-color: #232861
+		    z-index: -1;
+		}
+		
 		.image-container img {
+		    display: block; /* Remove bottom space from inline images */
 		    width: 100%;
 		    height: auto;
 		    object-fit: cover;
+		    position: relative; /* Ensure the image is above the pseudo-element */
+		    z-index: 1; /* Ensure the image is above the pseudo-element */
+		}
+		
+		/* Media queries for responsiveness */
+		@media (max-width: 768px) {
+		    .image-container::before {
+		        top: -3%;  /* Adjust this value for the desired offset on smaller screens */
+		        left: -3%; /* Adjust this value for the desired offset on smaller screens */
+		        width: calc(100% + 6%); /* Expand to cover the offset */
+		        height: calc(100% + 6%); /* Expand to cover the offset */
+		    }
+		}
+		
+		@media (max-width: 480px) {
+		    .image-container::before {
+		        top: -4%;  /* Adjust this value for the desired offset on very small screens */
+		        left: -4%; /* Adjust this value for the desired offset on very small screens */
+		        width: calc(100% + 8%); /* Expand to cover the offset */
+		        height: calc(100% + 8%); /* Expand to cover the offset */
+		    }
+		}
+
+		.image-container, .text-container {
+		    flex: 1;
 		}
 		
 		.text-container h2 {
@@ -51,7 +90,7 @@
 		}
 		
 		@media (max-width: 768px) {
-		    .content-split, .content-split.reverse {
+		    .content-split {
 		        flex-direction: column;
 		    }
 		
@@ -192,15 +231,29 @@
 	</section>
 
 </main>
-
-    <!-- Scripts -->
-  
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/browser.min.js"></script>
-    <script src="../assets/js/breakpoints.min.js"></script>
-    <script src="../assets/js/navigation.js"></script>
-    <script src="../assets/js/util.js"></script>
-    <script src="../assets/js/main.js"></script>
+	
+	<!-- Footer -->
+	
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<li>Copyright &copy; 2024 Competition Dynamics. All rights reserved.</li>
+		</ul>
+	</footer>
+	
+	<!-- Scripts -->
+	
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/navigation.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
 
     	<script>
   		// JavaScript for scroll-based transitions
