@@ -2215,6 +2215,7 @@ section h2 {
 			padding: 6em 0 6em 0;
 		}
 
+
 			.main.style3 .content > header {
 				margin-bottom: 2em;
 			}
@@ -2227,13 +2228,10 @@ section h2 {
 				background: #f5f6f7;
 			}
 
+
 		.main.dark {
 			color: #ffffff;
 		}
-
-			.main.dark a {
-				color: inherit;
-			}
 
 			.main.dark .button.style2 {
 				border-color: #ffffff;
