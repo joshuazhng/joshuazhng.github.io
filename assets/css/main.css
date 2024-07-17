@@ -599,7 +599,14 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #2881ba;
+		color: #2881ba; /* Link color */
+		text-decoration: none;
+	}
+
+	a:hover { 
+	    /* Adjust color & underline when hovering over link */
+	    color: #b9daf0;
+	    text-decoration: underline;
 	}
 
 	sub {
