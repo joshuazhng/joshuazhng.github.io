@@ -103,7 +103,7 @@ input, select, textarea {
 		background: #ffffff;
 		height: 100%;
 		min-width: 320px;
-		color: #000000;
+		color: #282828; /* text color */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -514,7 +514,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
-		color: #39454b;
+		color: #282828; /* text color */
 		letter-spacing: 0.025em;
 	}
 
@@ -562,7 +562,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "MinionPro", "Arial";
 		font-weight: 900;
-		color: #262626;
+		color: #282828; /* text color for headers */
 		letter-spacing: -0.0325em;
 	}
 
@@ -1204,22 +1204,6 @@ input, select, textarea {
 	footer {
 		margin-top: 2em;
 	}
-
-/* For Practices Page */
-
-/* Enhanced Header styles */
-header {
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.intro-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
 
 /* Sticky menu */
 .sticky-menu {
@@ -1929,7 +1913,7 @@ section h2 {
 
 			#header nav ul {
 				margin: 0;
-				color: #262626;
+				color: #282828; /* text color for navigation */
 			}
 
 				#header nav ul li {
@@ -2028,7 +2012,7 @@ section h2 {
 		    }
 
 		    #header nav ul li a {
-		        color: #262626; /* Ensure text is visible on the new background */
+		        color: #282828; /* text color for navigation */
 			display: block;
 			padding: 0.5em 1em;
 		    }
@@ -2050,7 +2034,7 @@ section h2 {
 		    #header .menu-toggle div {
 		        width: 100%;
 		        height: 3px;
-		        background-color: #262626;
+		        background-color: #282828; /* text color for header */
 			transition: all 0.3s ease-in-out;
 		    }
 
@@ -2463,47 +2447,6 @@ section h2 {
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
-
-/* Careers Page */
-
-.careers-page {
-    color: black; /* Set text color to black */
-    text-align: center; /* Center align all text */
-}
-
-.careers-page .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.careers-page .content {
-    max-width: 800px; /* Adjust max-width as per your design */
-    margin: 0 auto; /* Center align content within main */
-}
-
-.careers-page .content p,
-.careers-page .content ul {
-    text-align: left; /* Reset text alignment for paragraphs and lists */
-    margin-bottom: 1em;
-}
-
-.careers-page .footer {
-    text-align: center; /* Center align text in footer */
-    color: black;
-}
-
-.careers-page .form {
-    text-align: center; /* Center align text in form */
-}
-
-.careers-page label {
-    display: block;
-    text-align: center;
-    margin-bottom: 0.5em;
-}
 
 /* Contact */
 
