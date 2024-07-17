@@ -24,25 +24,37 @@
 		    width: 100%;
 		    max-width: 1200px;
 		    margin: 0 auto;
-		    gap: 2rem;
+		    gap: 5rem;
 		}
-	    	.image-container {
+	    
+	    	.image-container-left, .image-container-right {
 		    position: relative;
 		    display: inline-block; /* Ensure the container sizes to the image */
 		}
 		
-		.image-container::before {
+		.image-container-left::before {
 		    content: '';
 		    position: absolute;
-		    top: -2%;  /* Adjust this value for the desired offset */
-		    left: -2%; /* Adjust this value for the desired offset */
-		    width: calc(100% + 4%); /* Expand to cover the offset */
-		    height: calc(100% + 4%); /* Expand to cover the offset */
-		    background-color: #232861
+		    top: -12%;  /* Adjust this value for the desired offset */
+		    left: -12%; /* Adjust this value for the desired offset */
+		    width: calc(100%); /* Expand to cover the offset */
+		    height: calc(90%); /* Expand to cover the offset */
+		    background-color: #232861;
+		    z-index: -1;
+		}
+
+		.image-container-right::before {
+		    content: '';
+		    position: absolute;
+		    top: -12%;  /* Adjust this value for the desired offset */
+		    right: -12%; /* Adjust this value for the desired offset */
+		    width: calc(100%); /* Expand to cover the offset */
+		    height: calc(90%); /* Expand to cover the offset */
+		    background-color: #232861;
 		    z-index: -1;
 		}
 		
-		.image-container img {
+		.image-container-left img, .image-container-right img {
 		    display: block; /* Remove bottom space from inline images */
 		    width: 100%;
 		    height: auto;
@@ -53,24 +65,38 @@
 		
 		/* Media queries for responsiveness */
 		@media (max-width: 768px) {
-		    .image-container::before {
-		        top: -3%;  /* Adjust this value for the desired offset on smaller screens */
-		        left: -3%; /* Adjust this value for the desired offset on smaller screens */
-		        width: calc(100% + 6%); /* Expand to cover the offset */
-		        height: calc(100% + 6%); /* Expand to cover the offset */
+		    .image-container-left::before {
+		        top: -13%;  /* Adjust this value for the desired offset on smaller screens */
+		        left: -13%; /* Adjust this value for the desired offset on smaller screens */
+		        width: calc(100%); /* Expand to cover the offset */
+		        height: calc(95%); /* Expand to cover the offset */
+		    }
+
+		    .image-container-right::before {
+			top: -13%;  /* Adjust this value for the desired offset on smaller screens */
+		        right: -13%; /* Adjust this value for the desired offset on smaller screens */
+		        width: calc(100%); /* Expand to cover the offset */
+		        height: calc(95%); /* Expand to cover the offset */
 		    }
 		}
 		
 		@media (max-width: 480px) {
-		    .image-container::before {
-		        top: -4%;  /* Adjust this value for the desired offset on very small screens */
-		        left: -4%; /* Adjust this value for the desired offset on very small screens */
-		        width: calc(100% + 8%); /* Expand to cover the offset */
-		        height: calc(100% + 8%); /* Expand to cover the offset */
+		    .image-container-left::before {
+		        top: -14%;  /* Adjust this value for the desired offset on very small screens */
+		        left: -14%; /* Adjust this value for the desired offset on very small screens */
+		        width: calc(100%); /* Expand to cover the offset */
+		        height: calc(100%); /* Expand to cover the offset */
+		    }
+
+		    .image-container-right::before {
+			top: -14%;  /* Adjust this value for the desired offset on smaller screens */
+		        right: -14%; /* Adjust this value for the desired offset on smaller screens */
+		        width: calc(100%); /* Expand to cover the offset */
+		        height: calc(100%); /* Expand to cover the offset */
 		    }
 		}
-
-		.image-container, .text-container {
+		  
+		.image-container-left, .image-container-right, .text-container {
 		    flex: 1;
 		}
 		
@@ -112,6 +138,7 @@
 			height: 100%;
 			overflow: hidden;
 			padding-top: 1.15em;
+			padding-bottom: 2em;
 		}
 		.practices-intro img {
 			width: 100%;
