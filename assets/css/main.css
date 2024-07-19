@@ -1,12 +1,13 @@
-/* Import Questrial and MinionPro fonts */
+/* Import MyriadPro fonts */
 @font-face {
-    font-family: 'Questrial';
-    src: url('assets/webfonts/Questrial-Regular.ttf') format('truetype');
+    font-family: 'MyriadSemibold';
+';
+    src: url('assets/webfonts/MyriadPro-SemiboldSemiCn.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'MinionPro';
-    src: url('assets/webfonts/MinionPro-Regular.otf') format('opentype');
+    font-family: 'MyriadReg';
+    src: url('assets/webfonts/MyriadPro-SemiCn.ttf') format('truetype');
 }
 
 
@@ -510,7 +511,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Questrial", "sans-serif";
+		font-family: "MyriadReg", "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -560,7 +561,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "MinionPro", "Arial";
+		font-family: "MyriadSemibold", "sans-serif";
 		font-weight: 900;
 		color: #282828; /* text color for headers */
 		letter-spacing: -0.0325em;
