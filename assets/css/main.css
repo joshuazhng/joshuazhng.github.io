@@ -1,13 +1,12 @@
 /* Import MyriadPro fonts */
 @font-face {
     font-family: 'MyriadSemibold';
-';
-    src: url('assets/webfonts/MyriadPro-SemiboldSemiCn.ttf') format('truetype');
+    src: url('../assets/webfonts/MyriadPro-SemiboldSemiCn.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MyriadReg';
-    src: url('assets/webfonts/MyriadPro-SemiCn.ttf') format('truetype');
+    src: url('../assets/webfonts/MyriadPro-SemiCn.ttf') format('truetype');
 }
 
 
