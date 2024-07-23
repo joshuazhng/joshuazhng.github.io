@@ -22,19 +22,28 @@
 
         .profile-right {
             position: relative;
-            background-color: #002955;
-            background-size: 15em auto;
-            background-position: -1em -1em;
             padding: 2em;
             margin-right: 6em;
             border-radius: 0.8em;
             height: fit-content;
         }
 
+        .background-offset {
+            position: absolute;
+            top: -2em;
+            left: -2em;
+            width: 15em;
+            height: 15em;
+            background-color: #002955;
+            border-radius: 0.8em;
+            z-index: 1;
+        }
+
         .profile-right img {
             width: 15em;
             height: auto;
             border-radius: 0.8em;
+	    z-index: 2;
         }
 
         h1 {
