@@ -17,31 +17,31 @@
 
         .profile-left {
             flex: 2;
-            padding-right: 6em;
+            padding-right: 3em;
         }
 
         .profile-right {
             position: relative;
             padding: 2em;
             margin-right: 6em;
-            border-radius: 0.8em;
+            border-radius: 0.2em;
             height: fit-content;
         }
 
         .background-offset {
             position: absolute;
-            top: -2em;
-            left: -2em;
+            bottom: 0.7em;
+            left: 0.1em;
             width: 15em;
-            height: 15em;
+            height: 22.55em;
             background-color: #002955;
-            border-radius: 0.8em;
-            z-index: 1;
+            border-radius: 0.2em;
+            z-index: -1;
         }
 
         .profile-right img {
             width: 15em;
-            height: auto;
+            height: 22.55em;
             border-radius: 0.8em;
 	    z-index: 2;
         }
@@ -135,6 +135,7 @@
             </div>
         </div>
         <div class="profile-right">
+	    <div class="background-offset"></div>
             <img src="../images/headshots/Jon-Putnam.jpg" alt="Jon Putnam">
         </div>
     </div>
